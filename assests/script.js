@@ -98,7 +98,7 @@ function selectAnswer(e) {
         checkAnswerEl.innerHTML = "Wow, thats right!";
     } else {
         checkAnswerEl.innerHTML = "Incorrect, better luck next time!";
-        if (timeLeft <= 10) {
+        if (timeLeft <= 15) {
             timeLeft = 0;
         } else {
             // If the answer is wrong, time will be deducted by 15 seconds
