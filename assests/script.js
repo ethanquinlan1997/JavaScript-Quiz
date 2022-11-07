@@ -101,8 +101,8 @@ function selectAnswer(e) {
         if (timeLeft <= 10) {
             timeLeft = 0;
         } else {
-            // If the answer is wrong, time will be deducted by 5 seconds
-            timeLeft -= 5;
+            // If the answer is wrong, time will be deducted by 15 seconds
+            timeLeft -= 15;
         }
     }
 
