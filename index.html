@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assests/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="scores">
+            <a id="highscores-link">Checkout your best scores!</a>
+        </div>
+        <div id="timer" class="timer">
+            Time: 75
+        </div>
+    </header>
+
+    <section id="start-container" class="start-quiz">
+        <h1>Hello, This Is A Timed JavaScript Quiz Challenge</h1>
+        <p>
+             Are you ready to test your JavaScript knowledge? If you decide to accept this challenge, go 
+            ahead a click on that start quiz button. Once that button is clicked, a timer of 75 seconds
+            will start counting down in the top right hand corner of your screen. Your objective is to 
+            answer a series of 5 questions as quick as possible. Every question you answer 'incorrecly'
+            will result in a 5 second deduction from the timer. Your total score is decided by how much
+            time is left on the clock once you finish the quiz. Ready? Then click the 'Start Quiz' button
+            below to begin!
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Please enter you intials to save your score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./assests/questions.js"></script>
+    <script src="./assests/script.js"></script>
+</body>
+
+</html>
