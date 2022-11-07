@@ -120,7 +120,7 @@ function selectAnswer(e) {
 };
 
 
-// Check and show the correct answer by set the buttons colors
+
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -151,15 +151,15 @@ function saveScore() {
     }, 2000)
 };
 
-
+// Open local storage and see scores
 var loadScores = function () {
-    // Get score from local storage
+    
 
     if (!savedScores) {
         return false;
     }
 
-    // Convert scores from stringfield format into array
+    // Changes from string into an array 
     savedScores = JSON.parse(savedScores);
     var initials = document.querySelector("#initials-field").value;
     var newScore = {
@@ -176,7 +176,7 @@ var loadScores = function () {
 };
 
 
-// Show high scores
+// Allows you to see high scores
 function showHighScores(initials) {
     document.getElementById("highscores").classList.remove("hide")
     document.getElementById("score-container").classList.add("hide");
@@ -191,7 +191,7 @@ function showHighScores(initials) {
 
     var highScoreEl = document.getElementById("highscore");
     highScoreEl.innerHTML = "";
-    //console.log(scores)
+    console.log(scores)
     for (i = 0; i < scores.length; i++) {
         var div1 = document.createElement("div");
         div1.setAttribute("class", "name-div");
@@ -209,7 +209,7 @@ function showHighScores(initials) {
 };
 
 
-// View high scores link
+// Link to the high scores
 viewHighScores.addEventListener("click", showHighScores);
 
 
@@ -220,13 +220,13 @@ submitButton.addEventListener("click", function (event) {
 });
 
 
-// Restart or reload the page
+// Click restart and it will reload the page/game
 restartButton.addEventListener("click", function () {
     window.location.reload();
 });
 
 
-// Clear localStorage items 
+// Clears the items in local storage 
 clearScoreButton.addEventListener("click", function () {
     localStorage.clear();
     document.getElementById("highscore").innerHTML = "";
