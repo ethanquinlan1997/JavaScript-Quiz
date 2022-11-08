@@ -1,3 +1,4 @@
+// Tried to lsit variables in order with functions
 var timeLeft = 75;
 var timerID;
 var timerEl = document.getElementById("timer");
