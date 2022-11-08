@@ -7,7 +7,7 @@ This is a timed javascript quiz. I coded this from scratch using the knowledge I
 
 ## Screenshots
 
-![ethanquinlan1997 github io_Timed-JavaScript-Quiz_](https://user-images.githubusercontent.com/111590402/200411138-7a4eff74-de19-4a98-a561-67d8b3b147ff.png)
+![_C__Users_Ethan%20Quinlan_JavaScript-Quiz_index html](https://user-images.githubusercontent.com/111590402/200465538-131e16b4-2501-4f56-be57-b031278bc39b.png)
 
 ## Application Links
 
