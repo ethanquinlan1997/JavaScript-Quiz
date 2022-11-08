@@ -15,7 +15,6 @@ var initialsField = document.getElementById("player-name");
 var restartButton = document.getElementById("restart-btn");
 var scoreField = document.getElementById("player-score");
 var scores = JSON.parse(localStorage.getItem("scores")) || [];
-
 var shuffledQuestions, currentQuestionIndex;
 
 
@@ -143,7 +142,6 @@ function saveScore() {
     clearInterval(timerID);
     timerEl.textContent = "Time: " + timeLeft;
     setTimeout(function () {
-        //localStorage.setItem("scores", JSON.stringify(scores));
         questionContainerEl.classList.add("hide");
         document.getElementById("score-container").classList.remove("hide");
         document.getElementById("your-score").textContent = "Your final score is " + timeLeft;
