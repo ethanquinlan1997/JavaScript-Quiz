@@ -11,7 +11,7 @@ This is a timed javascript quiz. I had to codd
 
 ## Application Links
 
-- GitHub Repository: https://github.com/ethanquinlan1997/Password-Generator
+- GitHub Repository: https://github.com/ethanquinlan1997/Timed-JavaScript-Quiz
 - Live Website: https://ethanquinlan1997.github.io/Timed-JavaScript-Quiz/
 
 
