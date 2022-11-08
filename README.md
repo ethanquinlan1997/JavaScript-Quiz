@@ -16,9 +16,9 @@ This is a timed javascript quiz. I coded this from scratch using the knowledge I
 
 ## Resources
 
--https://www.w3schools.com/js/js_quiz.asp <- used this for javascript questions
--https://simplestepscode.com/javascript-quiz-tutorial/ <- used this link for help with creating functions
--https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ <- used this link to help create varibles for questions and answers.
+https://www.w3schools.com/js/js_quiz.asp <- used this for javascript questions
+https://simplestepscode.com/javascript-quiz-tutorial/ <- used this link for help with creating functions
+https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/ <- used this link to help create varibles for questions and answers.
 
 ## Contribution
 
