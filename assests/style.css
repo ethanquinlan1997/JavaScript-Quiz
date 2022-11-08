@@ -32,7 +32,7 @@
   header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:space-around;
     margin: 25px 0;
   }
   
@@ -44,11 +44,17 @@
   }
   
   .timer {
-    text-decoration:underline blue;
+    border: solid;
+    border-color: aqua;
+    border-width: 2px;
+    padding: 5px;
   }
   .scores a {
     color: var(--secondary-color);
     cursor: pointer;
+    border: solid;
+    border-color: aqua;
+    border-width: 2px;
   }
   
   .scores a:hover {
@@ -73,7 +79,6 @@
   border-radius: 30px;
   border-color: lightgray;
   box-shadow: 10px 5px 5px lightgray;
-  color: #7c1229;
   }
   h2 {
     color: var(--tertiary-color);
@@ -97,12 +102,13 @@
     width: auto;
     overflow: visible;
     padding: 10px;
-    background-color: var(--primary-color);
-    border-radius: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
     font-size: large;
     margin: 10px;
     color: var(--white-color);
     cursor: pointer;
+
   }
   
   button:hover {
@@ -149,7 +155,7 @@
   .score-div {
     flex: 1 35%;
     padding: 10px 0;
-    border: 1px solid var(--correct-color);
+    border: 1px solid var(--primary-color);
   }
   
 
